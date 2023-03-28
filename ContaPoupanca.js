@@ -13,7 +13,7 @@ export class ContaPoupanca {
       }
     
       depositar(valor) {
-        if (valor <= 0) {
+        if (valor <= 100) {
           return;
         }
         this._saldo += valor;
@@ -21,7 +21,7 @@ export class ContaPoupanca {
     
     
       transferir(valor, conta) {
-        
+
         const valorSacado = this.sacar(valor);
         conta.depositar(valorSacado);
       }
