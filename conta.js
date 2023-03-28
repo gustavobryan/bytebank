@@ -20,7 +20,7 @@ export class Conta {
   }
 
   sacar(valor) {
-    
+    throw new Error ("O método da conta é abstrat0")
   }
 
   _sacar(valor, taxa) {
